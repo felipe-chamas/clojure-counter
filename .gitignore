@@ -1,0 +1,44 @@
+# Clojure/ClojureScript
+target/
+.cpcache/
+.nrepl-port
+.lein-*
+.shadow-cljs/
+node_modules/
+
+# Shadow-CLJS compiled output
+resources/public/js/
+.shadow-cljs/
+
+# Datomic
+datomic-free-*/
+data/
+
+# Editor files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# REPL history
+.nrepl-history
+.rebel_readline_history
+
+# Logs
+*.log
+
+# Java class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Build artifacts
+pom.xml
+pom.xml.asc
+*.pom
