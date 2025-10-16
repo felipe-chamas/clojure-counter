@@ -1,4 +1,5 @@
-(ns counter.core)
+(ns counter.core
+  (:require [clojure.string :as str]))
 
 (defonce state (atom {:counters {:a 0 :b 0} :selected :a}))
 
@@ -28,7 +29,7 @@
 
 (defn counter-card [id value selected?]
   (str "<div class='counter-card" (if selected? " selected" "") "'>"
-       "  <h3>Counter " (clojure.string/upper-case (name id)) "</h3>"
+       "  <h3>Counter " (str/upper-case (name id)) "</h3>"
        "  <div class='counter-value'>" value "</div>"
        "</div>"))
 
