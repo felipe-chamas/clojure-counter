@@ -29,6 +29,7 @@ npm i -g @railway/cli
 ```
 
 Manual steps:
+
 ```bash
 railway login
 railway init
